@@ -1,0 +1,67 @@
+html {
+	width: 100%;
+	height: 100%;
+	body,
+	#root {
+		width: 100%;
+		height: 100%;
+		min-height: 100%;
+		background: #3e4449;
+	}
+}
+
+.overflow-hidden,
+.scroll-blocked {
+	overflow: hidden;
+}
+
+.btn-edit {
+	color: #fff;
+	background: #00a5db;
+	border-radius: 14px;
+	border: 1px solid #00a5db;
+	padding: 2px 25px;
+	text-transform: uppercase;
+	margin: 0px 20px 0 20px;
+	float: right;
+}
+
+.btn-delete {
+	color: #fff;
+	background: #e30f11;
+	border-radius: 14px;
+	border: 1px solid #e30f11;
+	padding: 2px 25px;
+	text-transform: uppercase;
+}
+.btn-delete:hover {
+	color: #fff;
+	background: #e30f11;
+	border-radius: 14px;
+	border: 1px solid #e30f11;
+	padding: 2px 25px;
+	text-transform: uppercase;
+	opacity: 0.9;
+}
+
+.btn-confirm {
+	color: #fff;
+	background: #44b03d;
+	border-radius: 14px;
+	border: 1px solid #44b03d;
+	padding: 2px 25px;
+	text-transform: uppercase;
+	margin: 0px 20px 0 20px;
+	float: right;
+}
+.btn-confirm:hover {
+	color: #fff;
+	background: #44b03d;
+	border-radius: 14px;
+	border: 1px solid #44b03d;
+	padding: 2px 25px;
+	text-transform: uppercase;
+	margin: 0px 20px 0 20px;
+	float: right;
+	opacity: 0.9;
+}

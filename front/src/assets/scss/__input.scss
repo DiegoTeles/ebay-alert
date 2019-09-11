@@ -1,0 +1,36 @@
+$this: ".input-container";
+
+#{$this} {
+	margin: 30px auto;
+	display: flex;
+	justify-content: center;
+	&_label {
+		color: #fff;
+		margin: 0 10px;
+		text-transform: uppercase;
+	}
+	&_in {
+		color: black;
+		margin: 0 10px;
+		border-radius: 14px;
+		padding: 0 8px;
+	}
+
+	&_btn {
+		color: #fff;
+		background: #44b03d;
+		border-radius: 14px;
+		border: 1px solid #44b03d;
+		padding: 2px 25px;
+		text-transform: uppercase;
+	}
+	&_btn:hover {
+		color: #fff;
+		background: #44b03d;
+		border-radius: 14px;
+		border: 1px solid #44b03d;
+		padding: 2px 25px;
+		text-transform: uppercase;
+		opacity: 0.9;
+	}
+}

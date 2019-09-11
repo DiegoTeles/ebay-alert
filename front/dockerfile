@@ -1,0 +1,9 @@
+FROM node:latest
+LABEL mantainer="Telles TT:s@_DiegoTeles"
+LABEL version="1.0"
+WORKDIR /var/www/front
+COPY package.json /var/www/front
+
+EXPOSE 3000
+
+CMD [ "./build-front.sh" ]

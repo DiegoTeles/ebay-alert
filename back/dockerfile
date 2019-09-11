@@ -1,0 +1,7 @@
+FROM node:latest
+LABEL mantainer="Telles TT:@_DiegoTeles"
+LABEL version="1.0"
+WORKDIR /var/www/back
+COPY package.json /var/www/back
+EXPOSE 3001
+CMD [ "./build-back.sh" ]

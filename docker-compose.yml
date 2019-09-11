@@ -1,0 +1,46 @@
+version: "3"
+
+services:
+  mongodb:
+    container_name: ebay-alerts-mongodb
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: secret
+    ports:
+      - 27017:27017
+
+  redis:
+    container_name: ebay-alert-redis
+    image: redis:latest
+    ports:
+      - 6379:6379
+
+  alert-back:
+    depends_on:
+      - mongodb
+      - redis
+    container_name: "ebay-alert-back"
+    build:
+       context: ./back
+    image: ebay-alert-back:1.0
+    volumes:
+      - ./back:/var/www/back:cached
+    links:
+      - mongodb:mongodb
+      - redis:redis
+    ports:
+      - 3001:3001
+
+  alert-front:
+    depends_on:
+      - alert-back
+    container_name: "ebay-alert-front"
+    build:
+       context: ./front
+    image: ebay-alert-front:1.0
+    volumes:
+      - ./front:/var/www/front:cached 
+    ports:
+      - "3000:3000"
+
