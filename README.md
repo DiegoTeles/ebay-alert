@@ -37,6 +37,8 @@ PS.: For any reason the `MongoDB` container is taking way too long to start, if 
 - [React](https://reactjs.org/) for the frontend
   - [Create React App](https://github.com/facebook/create-react-app) as boilerplate
   - [Redux-Saga](https://redux-saga.js.org/) as state container
+  - [Sass](https://sass-lang.com/) as styles components
+  - [React bootstrap](https://react-bootstrap.github.io/) as ui kit
 - [MongoDB](https://docs.mongodb.com/) as database
 - [Mailtrap](https://mailtrap.io/) as SMTP server
 - [Redis](https://redis.io/) as cache
