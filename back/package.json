@@ -18,7 +18,7 @@
     "ebay-node-api": "^2.6.0",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.6.11",
     "node": "^12.9.1",
     "node-cron": "^2.0.3",
